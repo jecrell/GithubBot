@@ -1,0 +1,3 @@
+{
+"token": "Remove .txt extension, place your own bot's token inside this space, and enjoy your bot."
+}
