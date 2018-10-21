@@ -97,6 +97,8 @@ function handleIssuesAdminFor(repo, message) {
 
     if (message.member.hasPermission("MANAGE_MESSAGES")) {
         switch (cmd) {
+            case "add":
+            case "create":
             case "new":
                 {
                     console.log('Creating new issue');
@@ -123,7 +125,7 @@ function handleIssuesAdminFor(repo, message) {
                         if ( error ) {
                             throw new Error( error.message );
                         }
-                    var newIssue = "Opened new issue: " + description + " for " + slug;
+                    var newIssue = "Opened new issue: `" + title + "` - `" + description + "` for *" + slug + "*";
                         message.channel.send(newIssue)
                             .then(message => console.log(`Sent message: ${message.content}`))
                             .catch(console.error);
