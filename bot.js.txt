@@ -1,0 +1,50 @@
+const Discord = require('discord.io');
+const logger = require('winston');
+const fs = require('fs');
+const auth = require('./auth.json');
+const commands = require('./commands.js');
+const utilities = require('./utilities.js');
+
+// Configure logger settings
+logger.remove(logger.transports.Console);
+logger.add(new logger.transports.Console(), {
+    colorize: true
+});
+logger.level = 'debug';
+// Initialize Discord Bot
+const bot = new Discord.Client({
+    token: auth.token,
+    autorun: true
+ });
+ 
+bot.on('ready', () => {
+    logger.info('Connected');
+    logger.info('Logged in as: ');
+    logger.info(bot.username + ' - (' + bot.id + ')');
+});
+bot.on('message', (message) => {
+
+    console.log(message.content);
+    Object.getOwnPropertyNames(message).forEach((string) => {console.log(string);});
+    if (!message.author.bot)
+    {
+        // It will listen for messages that will start with `!`
+        if (message.content.substring(0, 1) == '!') {
+            var cmd = utilities.getArgument(0, message.content)
+           
+            args = args.splice(1);
+            switch(cmd) {
+                case 'issues':
+                    commands.issues(bot, message, repos, octokit, authGithub, createIssue);
+                    break;
+                case 'modorder':
+                    bot.sendMessage({
+                        to: channelID,
+                        message: commands.modOrder(fs)
+                    });
+                    break;
+                // Just add any case commands if you want to..
+             }
+         }
+    }
+});

@@ -1,0 +1,12 @@
+{
+    "repositories" : [
+        {"id":0, "name":"vampires", "user":"Rim-Of-Madness-Team", "repo":"Rim-of-Madness---Vampires"},
+        {"id":1, "name":"cults", "user":"Rim-Of-Madness-Team", "repo":"Call-of-Cthulhu---Cults"},
+        {"id":1, "name":"elder-things", "user":"Rim-Of-Madness-Team", "repo":"Call-of-Cthulhu---Elder-Things"},
+        {"id":1, "name":"straitjackets", "user":"Rim-Of-Madness-Team", "repo":"Call-of-Cthulhu---Straitjackets"},
+        {"id":1, "name":"industrial-age", "user":"Rim-Of-Madness-Team", "repo":"Call-of-Cthulhu---Industrial-Age"},
+        {"id":1, "name":"lovecraft", "user":"Rim-Of-Madness-Team", "repo":"HP-Lovecraft-Storyteller"},
+        {"id":1, "name":"arachnophobia", "user":"Rim-Of-Madness-Team", "repo":"Rim-of-Madness---Arachnophobia"},
+        {"id":1, "name":"werewolves", "user":"Rim-Of-Madness-Team", "repo":"Rim-of-Madness---Werewolves"}
+    ]
+}

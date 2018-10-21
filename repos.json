@@ -1,6 +1,0 @@
-{
-    "repositories" : [
-        {"id":0, "name":"vampires", "user":"Rim-Of-Madness-Team", "repo":"Rim-of-Madness---Vampires"},
-        {"id":1, "name":"cults", "user":"Rim-Of-Madness-Team", "repo":"Call-of-Cthulhu---Cults"}
-    ]
-}

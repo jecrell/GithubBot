@@ -6,8 +6,11 @@
   "author": "Jecrell",
   "dependencies": {
     "@octokit/rest": "^15.15.1",
+    "bluebird": "^3.5.2",
     "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
+    "discord.js": "^11.4.2",
     "fs": "0.0.1-security",
+    "github-create-issue": "^2.0.0",
     "octokit": "^1.0.0-hello-world",
     "winston": "^3.1.0"
   }
